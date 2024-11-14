@@ -1,1 +1,14 @@
+Text Classification - Sentiment Analysis with Neutral Sentiment
+Overview
+This project implements a sentiment analysis model to classify text data into
+three categories: Positive, Negative, and Neutral. 
+The model uses a pre-trained DistilBERT model fine-tuned on the SST-2 dataset for sentiment classification.
+The project demonstrates how to use the Hugging Face transformers library to perform sentiment analysis, evaluate model performance, 
+and visualize results such as confusion matrix and sentiment distribution.
+Key Features
+Predefined Text Data: A set of example text data for sentiment analysis.
+Sentiment Classification: Classifies text as Positive, Negative, or Neutral.
+Model: Uses a pre-trained DistilBERT model fine-tuned for sentiment classification.
+Evaluation: Calculates accuracy, classification report, and confusion matrix.
+Visualization: Plots sentiment distribution and confusion matrix.
 
