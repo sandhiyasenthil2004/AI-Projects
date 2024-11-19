@@ -1,0 +1,38 @@
+Question Answering with Dense Retrieval and BERT
+This project demonstrates a pipeline that combines dense retrieval using Sentence-BERT with question answering using a fine-tuned BERT model. 
+The system retrieves the most relevant passage from a given text corpus and extracts the answer to user-provided questions.
+
+Features
+Retrieve the most relevant passage for a question using Sentence-BERT.
+Extract specific answers from passages using a BERT-based Question Answering Model.
+Implements a fallback mechanism to handle cases where no relevant passage or answer is found.
+Requirements
+Install the necessary libraries:
+pip install torch transformers sentence-transformers
+
+How it Works
+1.Text Corpus Preparation:
+A small corpus of textual data is predefined.
+2.Dense Retrieval:
+Uses Sentence-BERT (all-MiniLM-L6-v2) to encode both the corpus and the input question.
+Cosine similarity determines the most relevant passage for the question.
+3.Question Answering:
+A pre-trained BERT model (bert-large-uncased-whole-word-masking-finetuned-squad) is used to extract the exact answer from the retrieved passage.
+
+Sample Output:
+Input Questions:
+How many pretrained models are available in Transformers?
+Transformers provides interoperability between which frameworks?
+What is the capital of Czech Republic?
+
+Customization
+Update Corpus: Modify the corpus variable in the script to include your own set of passages.
+Adjust Similarity Threshold: Change the value of the similarity threshold (0.3 by default) to control the sensitivity of the retrieval.
+
+Limitations
+Limited to the predefined corpus; answers outside the corpus cannot be retrieved.
+Performance is corpus-dependent and may require fine-tuning for larger datasets.
+
+References
+Hugging Face Transformers
+SentenceTransformers
