@@ -1,0 +1,24 @@
+Image Caption Generator
+This project utilizes a pre-trained Vision Encoder-Decoder model (ViT-GPT2) to generate captions for images. 
+The model is based on the combination of Vision Transformer (ViT) and GPT-2 and can generate meaningful captions for input images.
+
+Features
+Generates descriptive captions for input images.
+Uses the nlpconnect/vit-gpt2-image-captioning model from Hugging Face.
+Visualizes the input image alongside the generated caption using Matplotlib.
+
+Usage
+Place the image you want to caption in the project folder (or provide the image path).
+Run the script:
+python image_caption_generator.py
+The script will generate a caption for the image and display it along with the image in a Matplotlib plot.
+
+Acknowledgements
+Hugging Face Transformers
+nlpconnect/vit-gpt2-image-captioning
+
+Example Output
+Input Image:
+Generated Caption:
+A tree in the middle of a grassy field.
+
