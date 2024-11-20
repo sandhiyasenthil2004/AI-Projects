@@ -1,0 +1,20 @@
+Summarization Project
+Extracts text from PDF files, summarizes it using a pre-trained BART model, and saves the summary as a new PDF for efficient content comprehension.
+ 
+Features  
+Text Extraction: Extract text from PDF files using `PyMuPDF`.  
+Summarization: Generate concise summaries using the `facebook/bart-large-cnn` model from Hugging Face.  
+Save Summary: Save the summarized content as a new PDF. 
+
+Usage
+Place Your PDF: Ensure the PDF file is in the working directory or specify the full path.
+Update the File Path: Replace the pdf_file_path variable in the script with the path to your PDF.
+Run the Script: Execute the script to extract, summarize, and save the output.
+
+Acknowledgements
+Hugging Face Transformers for the pre-trained BART model.
+PyMuPDF library for efficient PDF text extraction.
+
+Example Output
+Generated Summary:
+A concise summary of the PDF content.
